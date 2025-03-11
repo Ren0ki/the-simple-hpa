@@ -19,7 +19,7 @@ return(
 <div>
    <table border="1px"> 
         <thead>
-            <tr border>
+            <tr>
 
                 <th> Gene </th>
                 <th> Gene Synonym </th>
