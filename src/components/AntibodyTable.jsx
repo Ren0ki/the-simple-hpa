@@ -24,7 +24,7 @@ return(
                 <th> Antibody </th>
                 <th> Reference ID </th>
                 <th> Immuno- Histochem </th>
-                <th> Immuno-FL </th>
+                <th> Immuno- Fluorescence </th>
                 <th> Subcellular Location </th>
                 <th> Secretome Location </th>
                 <th> Secretome Function </th>
