@@ -40,7 +40,7 @@ return(
                         <td className="data">{item["Antibody"]} </td>
                         <td className="data"> {item["RRID"]} </td>
                         <td className="data"> {item["Reliability IH"]} </td>
-                        <td className="data"> {item["Reliabiliy IF"]} </td>
+                        <td className="data"> {item["Reliability IF"]} </td>
                         <td className="data"> {item["Subcellular location"]} </td>
                         <td className="data"> {item["Secretome location"]} </td>
                         <td className="data"> {item["Secretome function"]} </td>
