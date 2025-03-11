@@ -1,0 +1,44 @@
+tr{
+
+    padding: 2rem;
+
+}
+
+thead th{
+
+    padding: 0.5rem 1rem;
+    border-width: .25rem;
+    width: 50%;
+    position: sticky;
+    background-color: #d2e4f1;
+    z-index: 100;
+    top: 0;
+ 
+
+    
+
+}
+
+td{
+
+    padding: 1rem;
+    width: 50%;
+    border-width: .25rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    padding-left: 10px;
+
+}
+
+table{
+
+  border-spacing: 0;
+    border: 5px solid black;
+    margin-top: 2rem;
+    width: 100%;
+    table-layout: fixed;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    
+
+}

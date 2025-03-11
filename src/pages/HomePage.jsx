@@ -1,102 +1,53 @@
 import Wrapper from "../components/Wrapper";
-import { useState } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faXmark } from '@fortawesome/free-solid-svg-icons';
-import { useEffect } from "react";
-import styles from "../styles/home.module.css";
-import React from "react";
-
+import melanoma from "../assets/MelanomaCard.png";
+import pancreatic from "../assets/PancreaticCard.png";
+import Proteome from "../components/Proteome";
+import hex1 from "../assets/hex1.png";
+import hex2 from "../assets/hex2.png";
+import hex3 from "../assets/hex3.png";
 const HomePage = () => {
 
-  const [type, setType] = useState(""); 
-  const [types, setTypes] = useState([]);
-  const [search, setSearch] = useState("");
-
-      useEffect(() => {
-      fetch("https://web.ics.purdue.edu/~glagman/profile-app/get-titles.php")
-      .then((res) => res.json())
-      .then((data) => {
-      setTypes(data.types);
-
-    });
-  }, []);
-
-  const handleTypeChange = (event) => {
-    setType(event.target.value);
-    setPage(1);
-  };
-
-  const handleSearchChange = (event) => {
-    setSearch(event.target.value);
-    setPage(1);
-  };
-    
-  const handleClear = () => {
-    setType("");
-    setSearch("");
-  };
-
-  
   return (
-
     <Wrapper>
+   <div>
+  <td style={{width: "50%", padding: "5%", textAlign: "left", alignContent: "0"}} className="card">
 
-      <div className="filter-wrapper">
-        
-        <div className="filter--select">
-
-        </div>
-          
-        <div className="filter--search">
-
-          <input
-            type="text"
-            id="search"
-            onChange={handleSearchChange}
-            value={search}
-          />
-
-        <button onClick={handleClear}> Search </button>
-
-        </div>
-
-      <p> 
-            <b>The Cancer resource - Explore the expression 
-            profiles of human cancers </b>
+      <p> This resource contains Cancer information based on mRNA and protein expression data from 31 different forms of human cancer, 
+          together with millions of in-house generated immunohistochemically stained tissue sections images and Kaplan-Meier plots showing 
+          the correlation between mRNA expression of each human protein gene and cancer patient survival. More information about the 
+          specific content and the generation and analysis of the data in the resource can be found in the <u><b>Methods Summary.</b></u>
       </p>
+      <br/>
 
-      <p> 
-            This resource contains Cancer information based on 
-            mRNA and protein expression data from 31 different 
-            forms of human cancer, together with millions of 
-            in-house generated immunohistochemically stained 
-            tissue sections images and Kaplan-Meier plots 
-            showing the correlation between mRNA expression of 
-            each human protein gene and cancer patient survival. 
-            More information about the specific content and the 
-            generation and analysis of the data in the resource 
-            can be found in the<b> <u>Methods Summary.</u></b>
-            <br />
-            <br /> Learn about: 
+      <p> Learn about: </p>
+
+      <ul>
+        <li> if the mRNA expression of a gene is prognostic for patient survival in each of the cancer types </li>
+        <li> if a gene is enriched in a particular cancer type </li>
+        <li> the catalogue of genes elevated in each of the cancer types </li>
+      </ul> 
       
-      <li> 
-           if the mRNA expression of a gene is prognostic for 
-           patient survival in each of the cancer types
-      </li>
+      <br/><br/>
+      <img src={hex1} alt="hexagon" style={{width: "2%", top: "1%"}} /> The Human Cancer Proteome
+      <br/><br/>
+      <img src={hex2} alt="hexagon" style={{width: "2%"}} /> Hallmarks of Cancer
+      <br/> <br/>
+      <img src={hex3} alt="hexagon" style={{width: "2%"}} /> Summary of Cancer Statistics From Relevant Databses
 
-      <li className="homeLink">
-           if a gene is enriched in a particular cancer type (specificity)
-      </li>
+    </td>
 
-      <li>
-           the catalogue of genes elevated in each of the cancer types
-      </li>
-      </p>
-        </div>
-             
+    <td style={{width: "50%"}}> 
+         
+         <img src={melanoma} alt="melanoma" style={{width: "500px"}} className="card"/>
+         <br /><br/>
+         <img src={pancreatic} alt="pancreatic" style={{width: "500px"}} className="card" />
+    </td>
+      
+   </div>
 
-</Wrapper>
-);
+   </Wrapper>
+   
+    );
 };
 
 export default HomePage;
