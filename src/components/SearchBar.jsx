@@ -7,7 +7,7 @@ const SearchBar = () => {
   const [title, setTitle] = useState("");
   const [titles, setTitles] = useState([]);
   const [search] = useState("");
-  const [count, setCount] = ueState(1);
+  const [count, setCount] = useState(1);
   const navigate = useNavigate();
 
       useEffect(() => {
