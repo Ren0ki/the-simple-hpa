@@ -7,6 +7,7 @@ const SearchBar = () => {
   const [title, setTitle] = useState("");
   const [titles, setTitles] = useState([]);
   const [search] = useState("");
+  const [count, setCount] = ueState(1);
   const navigate = useNavigate();
 
       useEffect(() => {
@@ -30,6 +31,10 @@ const SearchBar = () => {
     else if(selectedTitle === "Antibody and Protein Localization")
     {
       navigate("/antibody-table");
+    }
+    else if(selectedTitle === "RNA Blood Expression")
+    {
+      navigate("/rna-blood-table");
     }
 
   };
