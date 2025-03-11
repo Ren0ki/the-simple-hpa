@@ -27,6 +27,10 @@ const SearchBar = () => {
       navigate("/gene-table");
 
     }
+    else if(selectedTitle === "Antibody and Protein Localization")
+    {
+      navigate("/antibody-table");
+    }
 
   };
 
