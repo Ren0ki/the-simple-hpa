@@ -38,7 +38,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
   }
   
   h2 {
@@ -150,6 +149,10 @@ body {
     margin-bottom: 0.5rem;
     align-content: center;
   }
+
+  .filter--select{
+    width: 100%;
+  }
   
   select, input {
 
@@ -180,8 +183,17 @@ body {
     box-shadow: var(--box-shadow);
     margin: 0.75rem;
     width: 200px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
 
+@keyframes fadeIn {
+  to {
+      opacity: 1;
   }
+
+}
+
 
   .cards{
 
@@ -196,6 +208,8 @@ body {
     margin: 5% auto;
     justify-content: center;
     transition: width 0.3s ease-in;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
 
   }
 
