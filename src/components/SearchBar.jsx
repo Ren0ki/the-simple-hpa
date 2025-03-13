@@ -32,11 +32,22 @@ const SearchBar = () => {
     {
       navigate("/antibody-table");
     }
-    else if(selectedTitle === "RNA Blood Expression")
+    else if(selectedTitle === "RNA Expressions")
     {
-      navigate("/rna-blood-table");
+      navigate("/rna-expressions");
     }
-
+    else if(selectedTitle === "Blood Concentration")
+    {
+      navigate("/blood-table");
+    }
+    else if(selectedTitle === "Expression Clusters")
+    {
+      navigate("/cluster-table");
+    }
+    else if(selectedTitle === "Cancer Prognostics")
+    {
+      navigate("/prognostics");
+    }
   };
 
     useEffect(() => {

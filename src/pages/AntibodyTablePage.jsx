@@ -1,4 +1,4 @@
-import AntibodyTable from "../components/AntibodyTable";
+import AntibodyTable from "../tables/AntibodyTable";
 import Wrapper from "../components/Wrapper";
 
 const AntibodyTablePage = () => {
@@ -6,6 +6,9 @@ const AntibodyTablePage = () => {
     return (
 
       <Wrapper> 
+        <br/><br/>
+        <h1> Antibody and Protein Localization</h1>
+        <br/>
         < AntibodyTable /> 
       </Wrapper>
 

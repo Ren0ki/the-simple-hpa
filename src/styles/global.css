@@ -183,6 +183,32 @@ body {
 
   }
 
+  .cards{
+
+    background-color: #f0f9ff;
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    text-align: center;
+    align-content: center;
+    box-shadow: var(--box-shadow);
+    margin: 0.75rem;
+    width: 400px;
+    margin: 5% auto;
+    justify-content: center;
+    transition: width 0.3s ease-in;
+
+  }
+
+  .cards:hover{
+    background-color: #8ca9bf;
+    color: white;
+    a{
+      color: white;
+    }
+    width: 460px;
+  }
+
+
   .head{
     background-color: var(--primary-background-color);
     border-radius: var(--border-radius);
