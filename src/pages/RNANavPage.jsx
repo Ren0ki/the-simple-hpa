@@ -6,7 +6,7 @@ const RNANavPage = () => {
 
         <Wrapper>
          <br/><br/>
-         <h1> Prognostic Data </h1>     
+         <h1> RNA Expressions </h1>     
          <br/>
         <div className="cards">
             <Link to="/rna-blood-table">
