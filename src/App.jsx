@@ -14,10 +14,9 @@ import ClusterTablePage from "./pages/ClusterTablePage";
 import PrognosticNavPage from "./pages/PrognosticNavPage";
 import RNANavPage from "./pages/RNANavPage";
 import NotFound from "./pages/NotFound";
+import ChatbotPage from "./pages/ChatbotPage";
 import { useState, useEffect } from "react";
 import { HashRouter, Routes, Route } from "react-router-dom";
-
-
 
 const App = () => {
 
@@ -42,6 +41,7 @@ const App = () => {
         <Route path="/cluster-table" element={<ClusterTablePage/>}/>
         <Route path="/prognostics" element={<PrognosticNavPage/>}/>
         <Route path="/rna-expressions" element={<RNANavPage/>} />
+        <Route path="/chatbot" element={<ChatbotPage/>} />
         <Route path="*" element={<NotFound />} />
         
       </Routes>

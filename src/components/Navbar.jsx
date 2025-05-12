@@ -21,7 +21,7 @@ const Navbar = () => {
                 <Link to="#"> News </Link>
                 <Link to="#"> Learn </Link>
                 <Link to="/gene-table"> Data </Link>
-                <Link to="#"> Help </Link>
+                <Link to="/chatbot"> Help </Link>
               
         </nav>
         </h1>
